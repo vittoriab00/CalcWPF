@@ -9,8 +9,6 @@ namespace FirstWpfApp
         string leftop = ""; // Левый операнд
         string operation = ""; // Знак операции
         string rightop = ""; // Правый операнд
-        //коментарий
-        //коментарий
         public MainWindow()
         {
             InitializeComponent();
