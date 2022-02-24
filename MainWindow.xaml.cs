@@ -26,7 +26,14 @@ namespace FirstWpfApp
             // Получаем текст кнопки
             string s = (string)((Button)e.OriginalSource).Content;
             // Добавляем его в текстовое поле
-            textBlock.Text += s;
+            if (s == "BackSpace")
+            {
+                textBlock.Text = textBlock.Text.Remove(textBlock.Text.Length - 1, 1);
+            }
+            else
+            {
+                textBlock.Text += s;
+            }
             int num;
             // Пытаемся преобразовать его в число
             bool result = Int32.TryParse(s, out num);
